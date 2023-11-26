@@ -3,7 +3,9 @@ class Employee {
     this.name = name;
     this.salary = salary;
     this.title = title;
-    this.manager = manager;
+    if (manager) {
+      manager.addEmployee(this);
+    }
   }
 }
 
